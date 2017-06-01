@@ -1,15 +1,20 @@
-function fizzBuzz (arr) {
-  var points = new Array(100);
-        for (var i = 0; i < 100; i++) {
-            points[i] = i + 1;
-         if(arr % 3 === 0) {
-           console.log (Fizz);
-         else if( arr % 5 === 0) {
-           console.log (Buzz);
-         } else {
-           (console.log(FizzBuzz);
-         }
-         return points;
-        }
-      }
-}
+var _= require('underscore')
+
+function fizzBuzz () {
+ var newArr = [];
+ for (var i = 1; i <= 100; i ++) {
+   if( i % 15 === 0) {
+    newArr.push("FizzBuzz");
+   } else if (i % 3 === 0) {
+     newArr.push("Fizz");
+   } else if( i % 5 === 0) {
+     newArr.push("Buzz");
+   } else {
+     newArr.push(i);
+   }
+  }
+  return newArr;
+  }
+
+
+export default fizzBuzz;

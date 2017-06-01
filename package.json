@@ -12,5 +12,8 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-register || true"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
   }
 }
