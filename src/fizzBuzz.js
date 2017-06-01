@@ -1,5 +1,3 @@
-var _= require('underscore')
-
 function fizzBuzz () {
  var newArr = [];
  for (var i = 1; i <= 100; i ++) {
