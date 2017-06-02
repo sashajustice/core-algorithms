@@ -1,5 +1,5 @@
 function isPalindrome(string) {
-  var palindrome = string.replace(/[^A-Za-z0-9_]/g,"").toLowerCase().split('')
+  var palindrome = string.replace(/[^\w]/g,"").toLowerCase().split('')
   var bool;
   for(var i = 0; i < palindrome.length; i++) {
     if(palindrome[i] === palindrome[palindrome.length - 1 - i]) {
